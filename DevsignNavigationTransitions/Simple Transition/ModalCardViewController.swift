@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Cartography
 
 // When animating in/out of ModalCardViewController,
 // we need to know what type of transition is going on,
@@ -18,6 +19,7 @@ fileprivate enum ModalTransitionType {
 class ModalCardViewController: UIViewController {
 	private let cardView = UIView()
 	private let dismissButton = UIButton()
+	private let dismissTapView = UIView()
 	fileprivate var currentModalTransitionType: ModalTransitionType? = nil
 
 	fileprivate static let overlayBackgroundColor = UIColor.black.withAlphaComponent(0.4)
@@ -25,7 +27,6 @@ class ModalCardViewController: UIViewController {
 	init() {
 		super.init(nibName: nil, bundle: nil)
 
-		self.modalTransitionStyle = .crossDissolve
 		self.transitioningDelegate = self
 		self.modalPresentationStyle = .overFullScreen
 	}
@@ -39,41 +40,41 @@ class ModalCardViewController: UIViewController {
 
 		self.view.backgroundColor = ModalCardViewController.overlayBackgroundColor
 
+		// If you tap the gray background, the card dismisses
+		let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissButtonTapped))
+		self.dismissTapView.addGestureRecognizer(tapGesture)
+		self.view.addSubview(self.dismissTapView)
+		constrain(self.dismissTapView) { $0.edges == $0.superview!.edges }
+
+		// Let's add the rounded-corner white card
 		self.cardView.backgroundColor = .white
 		self.cardView.layer.cornerRadius = 12
 		self.cardView.clipsToBounds = true
 		self.view.addSubview(self.cardView)
+		constrain(self.cardView) {
+			$0.leading == $0.superview!.safeAreaLayoutGuide.leading + 8
+			$0.trailing == $0.superview!.safeAreaLayoutGuide.trailing - 8
+			$0.bottom == $0.superview!.safeAreaLayoutGuide.bottom - 8
+			$0.height == 300
+		}
 
+		// ...and the dismiss button
 		self.dismissButton.setTitle("Dismiss", for: .normal)
 		self.dismissButton.setTitleColor(self.view.tintColor, for: .normal)
 		self.dismissButton.addTarget(self, action: #selector(dismissButtonTapped), for: .touchUpInside)
 		self.cardView.addSubview(self.dismissButton)
+		constrain(self.dismissButton) {
+			$0.leading == $0.superview!.leading
+			$0.trailing == $0.superview!.trailing
+			$0.bottom == $0.superview!.bottom
+			$0.height == 50
+		}
     }
-
-	override func viewDidLayoutSubviews() {
-		super.viewDidLayoutSubviews()
-
-		let cardHeight = (self.view.bounds.height / 2) - 16
-		self.cardView.frame = CGRect(
-			x: self.view.layoutMargins.left,
-			y: self.view.bounds.height - cardHeight - 24,
-			width: self.view.bounds.width - self.view.layoutMargins.left - self.view.layoutMargins.right,
-			height: cardHeight
-		)
-
-		self.dismissButton.frame = CGRect(
-			x: 0,
-			y: self.cardView.bounds.height - 50,
-			width: self.cardView.bounds.width,
-			height: 50
-		)
-	}
 
 	@objc private func dismissButtonTapped() {
 		self.presentingViewController?.dismiss(animated: true, completion: nil)
 	}
 }
-
 
 extension ModalCardViewController: UIViewControllerTransitioningDelegate {
 	public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
@@ -119,7 +120,7 @@ extension ModalCardViewController: UIViewControllerAnimatedTransitioning {
 			self.view.backgroundColor = ModalCardViewController.overlayBackgroundColor
 		}
 
-		let damping: CGFloat = 0.8
+		let damping: CGFloat = 0.9
 		let animator = UIViewPropertyAnimator(duration: transitionDuration, dampingRatio: damping)
 
 		switch transitionType {
@@ -129,10 +130,7 @@ extension ModalCardViewController: UIViewControllerAnimatedTransitioning {
 			transitionContext.containerView.addSubview(toView)
 			animator.addAnimations(presentedSituation)
 		case .dismissal:
-			animator.addAnimations {
-				self.cardView.transform = CGAffineTransform.identity.translatedBy(x: 0, y: self.view.bounds.height - self.cardView.frame.minY + 20)
-			}
-//			animator.addAnimations(offscreenSituation)
+			animator.addAnimations(offscreenSituation)
 		}
 		animator.addCompletion { (position) in
 			assert(position == .end)

@@ -1,0 +1,6 @@
+framework module Pods_DevsignNavigationTransitions {
+  umbrella header "Pods-DevsignNavigationTransitions-umbrella.h"
+
+  export *
+  module * { export * }
+}

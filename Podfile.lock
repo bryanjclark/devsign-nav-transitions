@@ -1,0 +1,29 @@
+PODS:
+  - Cartography (3.1.0)
+  - SwiftTweaks (4.0.1)
+
+DEPENDENCIES:
+  - Cartography
+  - SwiftTweaks (from `https://github.com/khan/SwiftTweaks`, commit `5ab43cfa404e888d5c564119cc370b847a1cd9fb`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cartography
+
+EXTERNAL SOURCES:
+  SwiftTweaks:
+    :commit: 5ab43cfa404e888d5c564119cc370b847a1cd9fb
+    :git: https://github.com/khan/SwiftTweaks
+
+CHECKOUT OPTIONS:
+  SwiftTweaks:
+    :commit: 5ab43cfa404e888d5c564119cc370b847a1cd9fb
+    :git: https://github.com/khan/SwiftTweaks
+
+SPEC CHECKSUMS:
+  Cartography: 1988b7578871a56c036e7af17195cb2190edf18c
+  SwiftTweaks: aa0191b74ae5904a296a9d5fcc3073ca4452eb1d
+
+PODFILE CHECKSUM: 190c1c67a579076ae187d041e823ffae15eed909
+
+COCOAPODS: 1.5.3

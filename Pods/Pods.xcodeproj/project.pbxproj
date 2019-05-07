@@ -1,0 +1,1097 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D1684F80E40067156490D049ED4279 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
+		0DAEAB698A26ADD2C409AFCE0AB96FDE /* ComparableTweakDefaultParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07A1C729C28D27198A830733F00EF3 /* ComparableTweakDefaultParameters.swift */; };
+		112B339A033CBB81E3EDD63C2DA510C4 /* TweakWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7415D9A8DD8952A06AC69437123568B /* TweakWindow.swift */; };
+		13825A9914234EED3623AEDFB422B532 /* TweakClusterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95B7B341B07D47FBF788D29BC1047F8 /* TweakClusterType.swift */; };
+		1518610C5CB985F4A450FA8822F4610D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FC2E9F02E9095C6717BAD0F68FB924 /* Media.xcassets */; };
+		15B67951681FF39D7F560650B9F7C0CF /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789586B1EADC1A84DB5F0FFEF4D9EF36 /* Expression.swift */; };
+		19F992A2E2EF18C6F0E96A7609885416 /* TweakGroupTemplateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C8605250E21B7A9AD3E55EA2CE374D /* TweakGroupTemplateType.swift */; };
+		1A5A516D7BDBCDA3B7CF0454E8A1C5A7 /* UIColor+Tweaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040BE05865396F4C636A5A853132196B /* UIColor+Tweaks.swift */; };
+		1D8DB35E3F018A17D9CD2ACFB76E6B11 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911E6646872B51763B6F0E27592B71F /* AppTheme.swift */; };
+		1DCB3A431C615E46083BCA0EB8EA0EB3 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3660B5D0436D5B86B1BF5EAC96F9A72F /* Size.swift */; };
+		1DCDB45A5DFFB73C90EEAA14539775BA /* LayoutProxy+TypeErasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64107158496E656B4015B88324AD640 /* LayoutProxy+TypeErasure.swift */; };
+		2105AE7D8BCE2E00E007DD74A6ABC5FA /* SwiftTweaks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A34A6AB6CD7C235A6098CE9C8027B28E /* SwiftTweaks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21230CA3E07B9C7EEA3EE6C37395820E /* TweaksRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358FA0671CF41E866F82508B3E7A4FBC /* TweaksRootViewController.swift */; };
+		25D2DBE5EBA7B9ED3DC1B5185C66498E /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95BA0F174D3BA6A353B9E8E12B3FBA /* Constrain.swift */; };
+		2AACA05FA0E510DF2CAD9C4018BD7545 /* Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2901851D4F63692719679994E7F290C4 /* Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B19D9713F810449BC4477C474801A9E /* TweakStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616C144EBA80D420217597B2408C4C56 /* TweakStore.swift */; };
+		2BBE6A820D023EEDC1612F3235BAE2BF /* MultiTweakBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BA7ACA4AD94AFB0D8EDE674109C5D /* MultiTweakBinding.swift */; };
+		2CCADE3FCDE0463AD7B49D2B0E307CBE /* LayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53D43B5A82DBEB4F0D5B911C4C502A8 /* LayoutSupport.swift */; };
+		32200F0F0E0B8FACE9256ABD71083CCE /* TweaksBackupsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E25579CB8DA949515AB1F7672B430E /* TweaksBackupsListViewController.swift */; };
+		33092C695BC7ECBD9958D66FF155855E /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F10C5D71359CFEB0ACA487AEB6429 /* LayoutProxy.swift */; };
+		367E361D94BFCBD1E063799A0B6DF334 /* EdgeInsetsTweakTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1830B27D53741BDBDF4683A2AB3948C2 /* EdgeInsetsTweakTemplate.swift */; };
+		37FCD940C824B12A5105B5278BB17914 /* HashingUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FE2CC6F9C2E2798603A9128F9BECD /* HashingUtilities.swift */; };
+		3810623383D9ACA3E9DB446922324695 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ED35CA8D30BC364B503B9A5A458A3A /* Point.swift */; };
+		38CA0D6F46FC825D049D5B60368051CC /* TweaksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115C9F980BA0A02AAF7BE2A6B1B6BA28 /* TweaksViewController.swift */; };
+		406A9AA27905AEE9F3886C8A286025BD /* TweaksCollectionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97C14AD5D8BB8C32DF6122B92741F72 /* TweaksCollectionsListViewController.swift */; };
+		4484F28BDCE8CD3BD73CD9FD47A07BA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		47F964CC33255AE03735793F1996C180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		4CC70BC1FA06BCE471A946C3DB510AE2 /* UIView+BasicAnimationTweakTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F599AEF4D99A010FC3573D43E97BA17B /* UIView+BasicAnimationTweakTemplate.swift */; };
+		4D1B51BBF74B992E247863689A5884E6 /* TweakPersistency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C82BE715F4D10E33B41D3E75024F3B /* TweakPersistency.swift */; };
+		5103B7C35BBAD6C3BD91214828691B59 /* TweakDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15124299B9C0BB001E62AF74CC8860BD /* TweakDebug.swift */; };
+		521F4BBD97016949EE837DBA74ED0026 /* AutoresizingMaskLayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4F62B2783555844D707B226265A86E /* AutoresizingMaskLayoutProxy.swift */; };
+		556666ABAB2D5F37D5C88ADB45A6756F /* ColorRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53515FB16DAE2878E1B735466DAE1C /* ColorRepresentation.swift */; };
+		57D76A0529A0564C8D2DCB41FBAF1D1F /* SwiftTweaks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9143A27B880000663BBA00E1D40EDD83 /* SwiftTweaks-dummy.m */; };
+		585720EA60D264C86E24F8CD67FEDA62 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CB8DA5A02A542A9E22CE297285A34A /* Dimension.swift */; };
+		5A4FF91EDA4E0B9D55B3821E1F430244 /* LayoutSupportProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D419B558CF6D9B709C791F3A9CC1A57 /* LayoutSupportProxy.swift */; };
+		5FECF0CB16D976DCB029CD37FD41C1B4 /* Pods-DevsignNavigationTransitions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 407659338375E7B1A80BE955EA41C040 /* Pods-DevsignNavigationTransitions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64529F0467AB876ED04808A0674C9096 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31E09B66145E0C956513FA490E78237 /* Edge.swift */; };
+		6629F7257A5A7AEE8E0C47F0C01B8C2C /* LayoutGuideProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93A436EAE03B6DDDFD843C4556E435B /* LayoutGuideProxy.swift */; };
+		6783AC285474F7BC6C69EF1D91ABD545 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		6802C4D8FF87BE4081004911944C9EA4 /* UIImage+SwiftTweaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E732290C72588A2237A8FE0D68FA56 /* UIImage+SwiftTweaks.swift */; };
+		6AD95D3808933B95C3B7B1DDDF398B8C /* HitTransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7B472AEC163A582FA22E4E5F750163 /* HitTransparentWindow.swift */; };
+		6C2F82F89A8759D1981ABFD8036E0282 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF10A6F6B9546F4D3C8FEFB6AB8D038 /* Property.swift */; };
+		7503E2C674FBD026A2464B2386ABDD28 /* AnyTweak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C9F6645E2F2B0718CC08973F19933D /* AnyTweak.swift */; };
+		766C533D4D74D52EC1E2ECE9953B64A6 /* TweakGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564D4D966B0699C2B804700845826E26 /* TweakGroup.swift */; };
+		7887DA089A0BACAA81B12947C4038C8E /* TweakableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DE2FFC83317FBDFCFB85787CD109CF /* TweakableType.swift */; };
+		828176C2A8FE402B08BB535A38AE9F7C /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF68605DFF50FE520180A2733202152 /* Cartography-dummy.m */; };
+		87BDAA1AF8730543593F4551EA513AA9 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4DD43752509CA27E0818C02EC46E8E /* Context.swift */; };
+		87E301060F96FE9B0CF66B9D59987488 /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC1367F7EAEDF3C674694D1981312FE /* Clip.swift */; };
+		92C4AB65D0A0E8810D65044427E15D74 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F552B1DF2359D5127189CD5B83EBC08 /* Edges.swift */; };
+		9A0BA7BFD3B05DBAAA338817E2CA04F6 /* UIView+TweakGroupTemplateSpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A35CD96F0973DA12412D9344B3EFEE9 /* UIView+TweakGroupTemplateSpringAnimation.swift */; };
+		9C32C8899CF61152916711BD44282084 /* CALayer+ShadowTweakTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EE59086B62F39A59D70CCB91F538F /* CALayer+ShadowTweakTemplate.swift */; };
+		9D197879B3ABEAA2C1C674F68FF2D935 /* TweakCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83584E3BF0D7E4D388E0FC917283317 /* TweakCollectionViewController.swift */; };
+		A5280CF3820094274E876BA20527454A /* TweakColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBFBF2C21434ECE89DC84DB5A6ED1E5 /* TweakColorCell.swift */; };
+		A7198B9901AC2F41E43AE97BBB661F77 /* LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432F778F041B9CF82A557EFC2549537 /* LayoutGuide.swift */; };
+		A8B6B0A7E7E1044E850909B362FB7A42 /* TweakStore+Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B95D34C7004BD0D4EC74AB94A8C0E81 /* TweakStore+Sharing.swift */; };
+		AACE393C62BBC353066B48D8161BE034 /* UIEdgeInsets+EdgeInsetsTweakTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B2855BF413129A623B10900406496 /* UIEdgeInsets+EdgeInsetsTweakTemplate.swift */; };
+		AE5246FEDFF0EDA57A6EC649F58C4DB8 /* Pods-DevsignNavigationTransitions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6773F3DA5B2605F3C86EA5D00FC3ADA0 /* Pods-DevsignNavigationTransitions-dummy.m */; };
+		AF9193D885D836E70D17733D2D35185D /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71EA7272D59CA166B36F401DAB9DC16 /* ConstraintGroup.swift */; };
+		B31BB81974DE2312EA5D6B9756E6895F /* BasicAnimationTweakTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333C58A27EDF70023F2ED7622467BE0 /* BasicAnimationTweakTemplate.swift */; };
+		B51533CA848EED082280551093DBE06B /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D842A92FD9DB5E1F8782616879CD95C /* Distribute.swift */; };
+		B544DD3C2FEAEF608EAE46AB695C8D63 /* Precision.swift in Sources */ = {isa = PBXBuildFile; fileRef = D791D3BFD8E9E9BA5C7DF37140169DF5 /* Precision.swift */; };
+		B6C40BEB489490A804217777D376AD78 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3E0F40AC47C7B4B4BEBE53B9BE4008 /* Extensions.swift */; };
+		BA4CDF6377B9E4043910D50B37BAA5E1 /* LayoutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFEA4EAB1096EC5D3A3648F3C507DA9 /* LayoutItem.swift */; };
+		BE42CF22478011780DDDFB7FB4776797 /* TweakColorEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47A77CF7829785E833F6807811641CF /* TweakColorEditViewController.swift */; };
+		BF24609084483494C0E6056BD62684C8 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569EE4B4F888C6CFD53834EE41BD72EA /* Priority.swift */; };
+		BFCAEAF26005F7AD0C913F3E0A4AB60C /* TweakLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45AF1A3A5174A45064F641EFD1DC34 /* TweakLibrary.swift */; };
+		CBC208DD619AF5EF0F9E070F28E4C860 /* ViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BEF83A9ACCDC1082A808893B0B1CBC /* ViewProxy.swift */; };
+		CCBFAD1BB2B39E77544F858B06837DC0 /* ShadowTweakTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F09683F95B911B212F6454FC3373A8E /* ShadowTweakTemplate.swift */; };
+		D4C82E3D18AAF4D22457D0820C6062C7 /* TweakBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0087C9102A6BBB18DEEFE890C3F474 /* TweakBackup.swift */; };
+		DD9D802B2C29F57409366594E0C067A4 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A462149349A65FC7C461B1EB79473D /* Constraint.swift */; };
+		DEB69C9AD367316811C2B36D5C245D9B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA12426273DC8E2DF9D007EF2AF435 /* View.swift */; };
+		DEC04189BFBC3F1121D1133213E82F7B /* TweakTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC2EA280842561F768873A196A3F3B8 /* TweakTableCell.swift */; };
+		E4360D8E68CDAD9D48E40AF1C49B9284 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA1A52927D211FA6131714DD31F8762 /* Coefficients.swift */; };
+		E436F4AA20929C308AC0C742637BA9C7 /* TweakViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D13852770ED10CA4976E481CE58AFBA /* TweakViewData.swift */; };
+		E4D515617DD65F73AEE5094A82FD0DF2 /* Tweak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097ED51556B0BB5A791C004E06511EF3 /* Tweak.swift */; };
+		E77CD81B53349B83CF4E8A87F7F28FA9 /* MultiTweakBindingIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF9CFB2464FF39D4FE5B8BACE9E1174 /* MultiTweakBindingIdentifier.swift */; };
+		EA0476907ECF715F12D6EAC530F25BB2 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949E14AFBD645B4539B5A23E24F47AD9 /* Compound.swift */; };
+		ECDB12B1FC8345E19995D65BD8034D2D /* TweakBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0530C56CA6CD97622831B1E1EF058B24 /* TweakBinding.swift */; };
+		EEE72415A600600C01CC21A69FB257A7 /* StringOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05932C52A0A051A7782C9E7D377AC259 /* StringOptionViewController.swift */; };
+		F14427ABEB5D97CB9B905E4C53456759 /* TweakCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F69478A8BF1D0E13C1D920B13D9B83 /* TweakCollection.swift */; };
+		F1F5A152ED6BEFB92C7760CC18574298 /* FloatingTweakGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C676B64A2D13796E0A5780530571176 /* FloatingTweakGroupViewController.swift */; };
+		FA05AA9FE282F7DD782546BE172554EB /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = B468A7B18CCCD46249C23B57FB2426CE /* Align.swift */; };
+		FD28D19BB52195D4791CE116CC825A84 /* TweakBindingIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF871C9D8A73E59814DE15133CAF9F68 /* TweakBindingIdentifier.swift */; };
+		FE5F012FCBC6BE40BD1BEBBCD8E39B34 /* SpringAnimationTweakTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33147E017F237BE54C645D13237B081A /* SpringAnimationTweakTemplate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32C916DBD048DB221D3AE2DBEE885E65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69A75AAB72236EFAD63B444FC80410FA;
+			remoteInfo = SwiftTweaks;
+		};
+		40800163FB70322747B54B433E40B67D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1305A2A3108BB80AA55C80583A5071E;
+			remoteInfo = Cartography;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		040BE05865396F4C636A5A853132196B /* UIColor+Tweaks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Tweaks.swift"; path = "SwiftTweaks/UIColor+Tweaks.swift"; sourceTree = "<group>"; };
+		0432F778F041B9CF82A557EFC2549537 /* LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutGuide.swift; path = Cartography/LayoutGuide.swift; sourceTree = "<group>"; };
+		0530C56CA6CD97622831B1E1EF058B24 /* TweakBinding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakBinding.swift; path = SwiftTweaks/TweakBinding.swift; sourceTree = "<group>"; };
+		0587C72BCB5343ECBBEA84286BDFFB78 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05932C52A0A051A7782C9E7D377AC259 /* StringOptionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringOptionViewController.swift; path = SwiftTweaks/StringOptionViewController.swift; sourceTree = "<group>"; };
+		06AA12426273DC8E2DF9D007EF2AF435 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
+		097ED51556B0BB5A791C004E06511EF3 /* Tweak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tweak.swift; path = SwiftTweaks/Tweak.swift; sourceTree = "<group>"; };
+		0BC1367F7EAEDF3C674694D1981312FE /* Clip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Clip.swift; path = SwiftTweaks/Clip.swift; sourceTree = "<group>"; };
+		115C9F980BA0A02AAF7BE2A6B1B6BA28 /* TweaksViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweaksViewController.swift; path = SwiftTweaks/TweaksViewController.swift; sourceTree = "<group>"; };
+		134CA01B50065AC55850E62C54F4ADAC /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cartography.framework; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15124299B9C0BB001E62AF74CC8860BD /* TweakDebug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakDebug.swift; path = SwiftTweaks/TweakDebug.swift; sourceTree = "<group>"; };
+		169FE2CC6F9C2E2798603A9128F9BECD /* HashingUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HashingUtilities.swift; path = SwiftTweaks/HashingUtilities.swift; sourceTree = "<group>"; };
+		172B2855BF413129A623B10900406496 /* UIEdgeInsets+EdgeInsetsTweakTemplate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIEdgeInsets+EdgeInsetsTweakTemplate.swift"; path = "SwiftTweaks/UIEdgeInsets+EdgeInsetsTweakTemplate.swift"; sourceTree = "<group>"; };
+		1830B27D53741BDBDF4683A2AB3948C2 /* EdgeInsetsTweakTemplate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsetsTweakTemplate.swift; path = SwiftTweaks/EdgeInsetsTweakTemplate.swift; sourceTree = "<group>"; };
+		1B95D34C7004BD0D4EC74AB94A8C0E81 /* TweakStore+Sharing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TweakStore+Sharing.swift"; path = "SwiftTweaks/TweakStore+Sharing.swift"; sourceTree = "<group>"; };
+		2901851D4F63692719679994E7F290C4 /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
+		2A7B472AEC163A582FA22E4E5F750163 /* HitTransparentWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HitTransparentWindow.swift; path = SwiftTweaks/HitTransparentWindow.swift; sourceTree = "<group>"; };
+		2D842A92FD9DB5E1F8782616879CD95C /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
+		2D95BA0F174D3BA6A353B9E8E12B3FBA /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
+		32C76C64037674C878561AC76C9D2CA4 /* Pods-DevsignNavigationTransitions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DevsignNavigationTransitions.modulemap"; sourceTree = "<group>"; };
+		33147E017F237BE54C645D13237B081A /* SpringAnimationTweakTemplate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimationTweakTemplate.swift; path = SwiftTweaks/SpringAnimationTweakTemplate.swift; sourceTree = "<group>"; };
+		33926D8924C3A54D705C50D2821FDED6 /* Pods-DevsignNavigationTransitions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DevsignNavigationTransitions.debug.xcconfig"; sourceTree = "<group>"; };
+		358FA0671CF41E866F82508B3E7A4FBC /* TweaksRootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweaksRootViewController.swift; path = SwiftTweaks/TweaksRootViewController.swift; sourceTree = "<group>"; };
+		3660B5D0436D5B86B1BF5EAC96F9A72F /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
+		3F09683F95B911B212F6454FC3373A8E /* ShadowTweakTemplate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShadowTweakTemplate.swift; path = SwiftTweaks/ShadowTweakTemplate.swift; sourceTree = "<group>"; };
+		3FF10A6F6B9546F4D3C8FEFB6AB8D038 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
+		407659338375E7B1A80BE955EA41C040 /* Pods-DevsignNavigationTransitions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DevsignNavigationTransitions-umbrella.h"; sourceTree = "<group>"; };
+		45607B51515B48363C6683671A03AA1A /* SwiftTweaks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTweaks-prefix.pch"; sourceTree = "<group>"; };
+		4D13852770ED10CA4976E481CE58AFBA /* TweakViewData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakViewData.swift; path = SwiftTweaks/TweakViewData.swift; sourceTree = "<group>"; };
+		5333C58A27EDF70023F2ED7622467BE0 /* BasicAnimationTweakTemplate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicAnimationTweakTemplate.swift; path = SwiftTweaks/BasicAnimationTweakTemplate.swift; sourceTree = "<group>"; };
+		564D4D966B0699C2B804700845826E26 /* TweakGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakGroup.swift; path = SwiftTweaks/TweakGroup.swift; sourceTree = "<group>"; };
+		569EE4B4F888C6CFD53834EE41BD72EA /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
+		5722665862DC37C65DC8D467DE9903CB /* Pods-DevsignNavigationTransitions-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DevsignNavigationTransitions-acknowledgements.markdown"; sourceTree = "<group>"; };
+		57BEF83A9ACCDC1082A808893B0B1CBC /* ViewProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewProxy.swift; path = Cartography/ViewProxy.swift; sourceTree = "<group>"; };
+		5DCEA4692D4A0ACED6D53551A5BC7F1C /* SwiftTweaks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftTweaks.xcconfig; sourceTree = "<group>"; };
+		5F53515FB16DAE2878E1B735466DAE1C /* ColorRepresentation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorRepresentation.swift; path = SwiftTweaks/ColorRepresentation.swift; sourceTree = "<group>"; };
+		616C144EBA80D420217597B2408C4C56 /* TweakStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakStore.swift; path = SwiftTweaks/TweakStore.swift; sourceTree = "<group>"; };
+		6773F3DA5B2605F3C86EA5D00FC3ADA0 /* Pods-DevsignNavigationTransitions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DevsignNavigationTransitions-dummy.m"; sourceTree = "<group>"; };
+		6A35CD96F0973DA12412D9344B3EFEE9 /* UIView+TweakGroupTemplateSpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+TweakGroupTemplateSpringAnimation.swift"; path = "SwiftTweaks/UIView+TweakGroupTemplateSpringAnimation.swift"; sourceTree = "<group>"; };
+		6A4DD43752509CA27E0818C02EC46E8E /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
+		6C676B64A2D13796E0A5780530571176 /* FloatingTweakGroupViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingTweakGroupViewController.swift; path = SwiftTweaks/FloatingTweakGroupViewController.swift; sourceTree = "<group>"; };
+		6D419B558CF6D9B709C791F3A9CC1A57 /* LayoutSupportProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupportProxy.swift; path = Cartography/LayoutSupportProxy.swift; sourceTree = "<group>"; };
+		789586B1EADC1A84DB5F0FFEF4D9EF36 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
+		87C2D9E1CCEE9708785D16A2C266F0C7 /* Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cartography.xcconfig; sourceTree = "<group>"; };
+		87F69478A8BF1D0E13C1D920B13D9B83 /* TweakCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakCollection.swift; path = SwiftTweaks/TweakCollection.swift; sourceTree = "<group>"; };
+		88C9F6645E2F2B0718CC08973F19933D /* AnyTweak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyTweak.swift; path = SwiftTweaks/AnyTweak.swift; sourceTree = "<group>"; };
+		8911E6646872B51763B6F0E27592B71F /* AppTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppTheme.swift; path = SwiftTweaks/AppTheme.swift; sourceTree = "<group>"; };
+		8A45AF1A3A5174A45064F641EFD1DC34 /* TweakLibrary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakLibrary.swift; path = SwiftTweaks/TweakLibrary.swift; sourceTree = "<group>"; };
+		8B0087C9102A6BBB18DEEFE890C3F474 /* TweakBackup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakBackup.swift; path = SwiftTweaks/TweakBackup.swift; sourceTree = "<group>"; };
+		8B6EE59086B62F39A59D70CCB91F538F /* CALayer+ShadowTweakTemplate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+ShadowTweakTemplate.swift"; path = "SwiftTweaks/CALayer+ShadowTweakTemplate.swift"; sourceTree = "<group>"; };
+		8C2927506EF16544FA0EB96808E7C9A3 /* SwiftTweaks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftTweaks.modulemap; sourceTree = "<group>"; };
+		8DFEA4EAB1096EC5D3A3648F3C507DA9 /* LayoutItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutItem.swift; path = Cartography/LayoutItem.swift; sourceTree = "<group>"; };
+		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9143A27B880000663BBA00E1D40EDD83 /* SwiftTweaks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftTweaks-dummy.m"; sourceTree = "<group>"; };
+		926832015C810694074FC9CE768D4E15 /* Pods_DevsignNavigationTransitions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DevsignNavigationTransitions.framework; path = "Pods-DevsignNavigationTransitions.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9439B61878BE5C1E698921F0A8E5EFC1 /* SwiftTweaks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftTweaks.framework; path = SwiftTweaks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		949E14AFBD645B4539B5A23E24F47AD9 /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
+		9C3E0F40AC47C7B4B4BEBE53B9BE4008 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
+		9F552B1DF2359D5127189CD5B83EBC08 /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
+		A0ED35CA8D30BC364B503B9A5A458A3A /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
+		A34A6AB6CD7C235A6098CE9C8027B28E /* SwiftTweaks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTweaks-umbrella.h"; sourceTree = "<group>"; };
+		A4E732290C72588A2237A8FE0D68FA56 /* UIImage+SwiftTweaks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+SwiftTweaks.swift"; path = "SwiftTweaks/UIImage+SwiftTweaks.swift"; sourceTree = "<group>"; };
+		ABF68605DFF50FE520180A2733202152 /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
+		AC0A0A069CD99FD34392DB6A6A0AD327 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0716C43870151A3200DD9EB48A18D0 /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cartography.modulemap; sourceTree = "<group>"; };
+		B0C8605250E21B7A9AD3E55EA2CE374D /* TweakGroupTemplateType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakGroupTemplateType.swift; path = SwiftTweaks/TweakGroupTemplateType.swift; sourceTree = "<group>"; };
+		B0CF00F6EEA59785755F3747C9C49BBC /* Pods-DevsignNavigationTransitions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DevsignNavigationTransitions.release.xcconfig"; sourceTree = "<group>"; };
+		B2CB8DA5A02A542A9E22CE297285A34A /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
+		B468A7B18CCCD46249C23B57FB2426CE /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
+		B53D43B5A82DBEB4F0D5B911C4C502A8 /* LayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupport.swift; path = Cartography/LayoutSupport.swift; sourceTree = "<group>"; };
+		B95B7B341B07D47FBF788D29BC1047F8 /* TweakClusterType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakClusterType.swift; path = SwiftTweaks/TweakClusterType.swift; sourceTree = "<group>"; };
+		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BD1BA7ACA4AD94AFB0D8EDE674109C5D /* MultiTweakBinding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiTweakBinding.swift; path = SwiftTweaks/MultiTweakBinding.swift; sourceTree = "<group>"; };
+		BDA1A52927D211FA6131714DD31F8762 /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
+		BE4F62B2783555844D707B226265A86E /* AutoresizingMaskLayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoresizingMaskLayoutProxy.swift; path = Cartography/AutoresizingMaskLayoutProxy.swift; sourceTree = "<group>"; };
+		C64107158496E656B4015B88324AD640 /* LayoutProxy+TypeErasure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LayoutProxy+TypeErasure.swift"; path = "Cartography/LayoutProxy+TypeErasure.swift"; sourceTree = "<group>"; };
+		C7415D9A8DD8952A06AC69437123568B /* TweakWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakWindow.swift; path = SwiftTweaks/TweakWindow.swift; sourceTree = "<group>"; };
+		C83584E3BF0D7E4D388E0FC917283317 /* TweakCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakCollectionViewController.swift; path = SwiftTweaks/TweakCollectionViewController.swift; sourceTree = "<group>"; };
+		CCF9CFB2464FF39D4FE5B8BACE9E1174 /* MultiTweakBindingIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiTweakBindingIdentifier.swift; path = SwiftTweaks/MultiTweakBindingIdentifier.swift; sourceTree = "<group>"; };
+		CFC3DD358A483004AB44027EB8C6A1DE /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
+		D3D49334E999640FEFC961E21FB8DF06 /* Pods-DevsignNavigationTransitions-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DevsignNavigationTransitions-frameworks.sh"; sourceTree = "<group>"; };
+		D3EA7495DFA62483ECA7A4B3A248AA52 /* Pods-DevsignNavigationTransitions-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DevsignNavigationTransitions-acknowledgements.plist"; sourceTree = "<group>"; };
+		D71EA7272D59CA166B36F401DAB9DC16 /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
+		D791D3BFD8E9E9BA5C7DF37140169DF5 /* Precision.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Precision.swift; path = SwiftTweaks/Precision.swift; sourceTree = "<group>"; };
+		D906BE32C6FFF5F6B3970B56895D9403 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93A436EAE03B6DDDFD843C4556E435B /* LayoutGuideProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutGuideProxy.swift; path = Cartography/LayoutGuideProxy.swift; sourceTree = "<group>"; };
+		D9A462149349A65FC7C461B1EB79473D /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
+		DA07A1C729C28D27198A830733F00EF3 /* ComparableTweakDefaultParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComparableTweakDefaultParameters.swift; path = SwiftTweaks/ComparableTweakDefaultParameters.swift; sourceTree = "<group>"; };
+		E2DE2FFC83317FBDFCFB85787CD109CF /* TweakableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakableType.swift; path = SwiftTweaks/TweakableType.swift; sourceTree = "<group>"; };
+		E6C82BE715F4D10E33B41D3E75024F3B /* TweakPersistency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakPersistency.swift; path = SwiftTweaks/TweakPersistency.swift; sourceTree = "<group>"; };
+		E7E25579CB8DA949515AB1F7672B430E /* TweaksBackupsListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweaksBackupsListViewController.swift; path = SwiftTweaks/TweaksBackupsListViewController.swift; sourceTree = "<group>"; };
+		E9FC2E9F02E9095C6717BAD0F68FB924 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = SwiftTweaks/Media.xcassets; sourceTree = "<group>"; };
+		EEBFBF2C21434ECE89DC84DB5A6ED1E5 /* TweakColorCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakColorCell.swift; path = SwiftTweaks/TweakColorCell.swift; sourceTree = "<group>"; };
+		EEC2EA280842561F768873A196A3F3B8 /* TweakTableCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakTableCell.swift; path = SwiftTweaks/TweakTableCell.swift; sourceTree = "<group>"; };
+		EF3F10C5D71359CFEB0ACA487AEB6429 /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
+		F31E09B66145E0C956513FA490E78237 /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
+		F47A77CF7829785E833F6807811641CF /* TweakColorEditViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakColorEditViewController.swift; path = SwiftTweaks/TweakColorEditViewController.swift; sourceTree = "<group>"; };
+		F599AEF4D99A010FC3573D43E97BA17B /* UIView+BasicAnimationTweakTemplate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+BasicAnimationTweakTemplate.swift"; path = "SwiftTweaks/UIView+BasicAnimationTweakTemplate.swift"; sourceTree = "<group>"; };
+		F5A528B0D105772CFB924F7BF1349AB9 /* Pods-DevsignNavigationTransitions-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DevsignNavigationTransitions-resources.sh"; sourceTree = "<group>"; };
+		F97C14AD5D8BB8C32DF6122B92741F72 /* TweaksCollectionsListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweaksCollectionsListViewController.swift; path = SwiftTweaks/TweaksCollectionsListViewController.swift; sourceTree = "<group>"; };
+		FF871C9D8A73E59814DE15133CAF9F68 /* TweakBindingIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TweakBindingIdentifier.swift; path = SwiftTweaks/TweakBindingIdentifier.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF9049D09BE4217F3685160B3E230B90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4484F28BDCE8CD3BD73CD9FD47A07BA0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BDDC91CB4D839C48DE0522BE1FF00B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F964CC33255AE03735793F1996C180 /* Foundation.framework in Frameworks */,
+				00D1684F80E40067156490D049ED4279 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBE0F5BF99186558B6C0D1456735CFB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6783AC285474F7BC6C69EF1D91ABD545 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				908E902E026C5C22904CF9014A5604AD /* Foundation.framework */,
+				BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		305CBE7362907519BAE025DF3CA18783 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1DBCC7191BC118DF377401F4E0496B6 /* Cartography */,
+				F86A6E72E2DB57DF25029E5791F3E53C /* SwiftTweaks */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4313D79A1B4D45CF8995AAD98C93C306 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				134CA01B50065AC55850E62C54F4ADAC /* Cartography.framework */,
+				926832015C810694074FC9CE768D4E15 /* Pods_DevsignNavigationTransitions.framework */,
+				9439B61878BE5C1E698921F0A8E5EFC1 /* SwiftTweaks.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BC1214CEBC89F4CC4202693F5B0DA84 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5512CDBEBA009B2F3CF8B98D19E210E /* Pods-DevsignNavigationTransitions */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		789DA92CCCB3F3DC231D1DBB19CD4AB8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC0A0A069CD99FD34392DB6A6A0AD327 /* Info.plist */,
+				8C2927506EF16544FA0EB96808E7C9A3 /* SwiftTweaks.modulemap */,
+				5DCEA4692D4A0ACED6D53551A5BC7F1C /* SwiftTweaks.xcconfig */,
+				9143A27B880000663BBA00E1D40EDD83 /* SwiftTweaks-dummy.m */,
+				45607B51515B48363C6683671A03AA1A /* SwiftTweaks-prefix.pch */,
+				A34A6AB6CD7C235A6098CE9C8027B28E /* SwiftTweaks-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftTweaks";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				305CBE7362907519BAE025DF3CA18783 /* Pods */,
+				4313D79A1B4D45CF8995AAD98C93C306 /* Products */,
+				5BC1214CEBC89F4CC4202693F5B0DA84 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		C1DBCC7191BC118DF377401F4E0496B6 /* Cartography */ = {
+			isa = PBXGroup;
+			children = (
+				B468A7B18CCCD46249C23B57FB2426CE /* Align.swift */,
+				BE4F62B2783555844D707B226265A86E /* AutoresizingMaskLayoutProxy.swift */,
+				BDA1A52927D211FA6131714DD31F8762 /* Coefficients.swift */,
+				949E14AFBD645B4539B5A23E24F47AD9 /* Compound.swift */,
+				2D95BA0F174D3BA6A353B9E8E12B3FBA /* Constrain.swift */,
+				D9A462149349A65FC7C461B1EB79473D /* Constraint.swift */,
+				D71EA7272D59CA166B36F401DAB9DC16 /* ConstraintGroup.swift */,
+				6A4DD43752509CA27E0818C02EC46E8E /* Context.swift */,
+				B2CB8DA5A02A542A9E22CE297285A34A /* Dimension.swift */,
+				2D842A92FD9DB5E1F8782616879CD95C /* Distribute.swift */,
+				F31E09B66145E0C956513FA490E78237 /* Edge.swift */,
+				9F552B1DF2359D5127189CD5B83EBC08 /* Edges.swift */,
+				789586B1EADC1A84DB5F0FFEF4D9EF36 /* Expression.swift */,
+				9C3E0F40AC47C7B4B4BEBE53B9BE4008 /* Extensions.swift */,
+				0432F778F041B9CF82A557EFC2549537 /* LayoutGuide.swift */,
+				D93A436EAE03B6DDDFD843C4556E435B /* LayoutGuideProxy.swift */,
+				8DFEA4EAB1096EC5D3A3648F3C507DA9 /* LayoutItem.swift */,
+				EF3F10C5D71359CFEB0ACA487AEB6429 /* LayoutProxy.swift */,
+				C64107158496E656B4015B88324AD640 /* LayoutProxy+TypeErasure.swift */,
+				B53D43B5A82DBEB4F0D5B911C4C502A8 /* LayoutSupport.swift */,
+				6D419B558CF6D9B709C791F3A9CC1A57 /* LayoutSupportProxy.swift */,
+				A0ED35CA8D30BC364B503B9A5A458A3A /* Point.swift */,
+				569EE4B4F888C6CFD53834EE41BD72EA /* Priority.swift */,
+				3FF10A6F6B9546F4D3C8FEFB6AB8D038 /* Property.swift */,
+				3660B5D0436D5B86B1BF5EAC96F9A72F /* Size.swift */,
+				06AA12426273DC8E2DF9D007EF2AF435 /* View.swift */,
+				57BEF83A9ACCDC1082A808893B0B1CBC /* ViewProxy.swift */,
+				D52E99D5C52FE3A74BE4F305032A9994 /* Support Files */,
+			);
+			name = Cartography;
+			path = Cartography;
+			sourceTree = "<group>";
+		};
+		D52E99D5C52FE3A74BE4F305032A9994 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD0716C43870151A3200DD9EB48A18D0 /* Cartography.modulemap */,
+				87C2D9E1CCEE9708785D16A2C266F0C7 /* Cartography.xcconfig */,
+				ABF68605DFF50FE520180A2733202152 /* Cartography-dummy.m */,
+				CFC3DD358A483004AB44027EB8C6A1DE /* Cartography-prefix.pch */,
+				2901851D4F63692719679994E7F290C4 /* Cartography-umbrella.h */,
+				D906BE32C6FFF5F6B3970B56895D9403 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cartography";
+			sourceTree = "<group>";
+		};
+		F5512CDBEBA009B2F3CF8B98D19E210E /* Pods-DevsignNavigationTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				0587C72BCB5343ECBBEA84286BDFFB78 /* Info.plist */,
+				32C76C64037674C878561AC76C9D2CA4 /* Pods-DevsignNavigationTransitions.modulemap */,
+				5722665862DC37C65DC8D467DE9903CB /* Pods-DevsignNavigationTransitions-acknowledgements.markdown */,
+				D3EA7495DFA62483ECA7A4B3A248AA52 /* Pods-DevsignNavigationTransitions-acknowledgements.plist */,
+				6773F3DA5B2605F3C86EA5D00FC3ADA0 /* Pods-DevsignNavigationTransitions-dummy.m */,
+				D3D49334E999640FEFC961E21FB8DF06 /* Pods-DevsignNavigationTransitions-frameworks.sh */,
+				F5A528B0D105772CFB924F7BF1349AB9 /* Pods-DevsignNavigationTransitions-resources.sh */,
+				407659338375E7B1A80BE955EA41C040 /* Pods-DevsignNavigationTransitions-umbrella.h */,
+				33926D8924C3A54D705C50D2821FDED6 /* Pods-DevsignNavigationTransitions.debug.xcconfig */,
+				B0CF00F6EEA59785755F3747C9C49BBC /* Pods-DevsignNavigationTransitions.release.xcconfig */,
+			);
+			name = "Pods-DevsignNavigationTransitions";
+			path = "Target Support Files/Pods-DevsignNavigationTransitions";
+			sourceTree = "<group>";
+		};
+		F86A6E72E2DB57DF25029E5791F3E53C /* SwiftTweaks */ = {
+			isa = PBXGroup;
+			children = (
+				88C9F6645E2F2B0718CC08973F19933D /* AnyTweak.swift */,
+				8911E6646872B51763B6F0E27592B71F /* AppTheme.swift */,
+				5333C58A27EDF70023F2ED7622467BE0 /* BasicAnimationTweakTemplate.swift */,
+				8B6EE59086B62F39A59D70CCB91F538F /* CALayer+ShadowTweakTemplate.swift */,
+				0BC1367F7EAEDF3C674694D1981312FE /* Clip.swift */,
+				5F53515FB16DAE2878E1B735466DAE1C /* ColorRepresentation.swift */,
+				DA07A1C729C28D27198A830733F00EF3 /* ComparableTweakDefaultParameters.swift */,
+				1830B27D53741BDBDF4683A2AB3948C2 /* EdgeInsetsTweakTemplate.swift */,
+				6C676B64A2D13796E0A5780530571176 /* FloatingTweakGroupViewController.swift */,
+				169FE2CC6F9C2E2798603A9128F9BECD /* HashingUtilities.swift */,
+				2A7B472AEC163A582FA22E4E5F750163 /* HitTransparentWindow.swift */,
+				BD1BA7ACA4AD94AFB0D8EDE674109C5D /* MultiTweakBinding.swift */,
+				CCF9CFB2464FF39D4FE5B8BACE9E1174 /* MultiTweakBindingIdentifier.swift */,
+				D791D3BFD8E9E9BA5C7DF37140169DF5 /* Precision.swift */,
+				3F09683F95B911B212F6454FC3373A8E /* ShadowTweakTemplate.swift */,
+				33147E017F237BE54C645D13237B081A /* SpringAnimationTweakTemplate.swift */,
+				05932C52A0A051A7782C9E7D377AC259 /* StringOptionViewController.swift */,
+				097ED51556B0BB5A791C004E06511EF3 /* Tweak.swift */,
+				E2DE2FFC83317FBDFCFB85787CD109CF /* TweakableType.swift */,
+				8B0087C9102A6BBB18DEEFE890C3F474 /* TweakBackup.swift */,
+				0530C56CA6CD97622831B1E1EF058B24 /* TweakBinding.swift */,
+				FF871C9D8A73E59814DE15133CAF9F68 /* TweakBindingIdentifier.swift */,
+				B95B7B341B07D47FBF788D29BC1047F8 /* TweakClusterType.swift */,
+				87F69478A8BF1D0E13C1D920B13D9B83 /* TweakCollection.swift */,
+				C83584E3BF0D7E4D388E0FC917283317 /* TweakCollectionViewController.swift */,
+				EEBFBF2C21434ECE89DC84DB5A6ED1E5 /* TweakColorCell.swift */,
+				F47A77CF7829785E833F6807811641CF /* TweakColorEditViewController.swift */,
+				15124299B9C0BB001E62AF74CC8860BD /* TweakDebug.swift */,
+				564D4D966B0699C2B804700845826E26 /* TweakGroup.swift */,
+				B0C8605250E21B7A9AD3E55EA2CE374D /* TweakGroupTemplateType.swift */,
+				8A45AF1A3A5174A45064F641EFD1DC34 /* TweakLibrary.swift */,
+				E6C82BE715F4D10E33B41D3E75024F3B /* TweakPersistency.swift */,
+				E7E25579CB8DA949515AB1F7672B430E /* TweaksBackupsListViewController.swift */,
+				F97C14AD5D8BB8C32DF6122B92741F72 /* TweaksCollectionsListViewController.swift */,
+				358FA0671CF41E866F82508B3E7A4FBC /* TweaksRootViewController.swift */,
+				616C144EBA80D420217597B2408C4C56 /* TweakStore.swift */,
+				1B95D34C7004BD0D4EC74AB94A8C0E81 /* TweakStore+Sharing.swift */,
+				115C9F980BA0A02AAF7BE2A6B1B6BA28 /* TweaksViewController.swift */,
+				EEC2EA280842561F768873A196A3F3B8 /* TweakTableCell.swift */,
+				4D13852770ED10CA4976E481CE58AFBA /* TweakViewData.swift */,
+				C7415D9A8DD8952A06AC69437123568B /* TweakWindow.swift */,
+				040BE05865396F4C636A5A853132196B /* UIColor+Tweaks.swift */,
+				172B2855BF413129A623B10900406496 /* UIEdgeInsets+EdgeInsetsTweakTemplate.swift */,
+				A4E732290C72588A2237A8FE0D68FA56 /* UIImage+SwiftTweaks.swift */,
+				F599AEF4D99A010FC3573D43E97BA17B /* UIView+BasicAnimationTweakTemplate.swift */,
+				6A35CD96F0973DA12412D9344B3EFEE9 /* UIView+TweakGroupTemplateSpringAnimation.swift */,
+				FBDBE088356E0A451C76617352B02623 /* Resources */,
+				789DA92CCCB3F3DC231D1DBB19CD4AB8 /* Support Files */,
+			);
+			name = SwiftTweaks;
+			path = SwiftTweaks;
+			sourceTree = "<group>";
+		};
+		FBDBE088356E0A451C76617352B02623 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9FC2E9F02E9095C6717BAD0F68FB924 /* Media.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		22E0A2B78AC8B5D2C96468E2BD68E56F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2105AE7D8BCE2E00E007DD74A6ABC5FA /* SwiftTweaks-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF29E2F66635E8564B50D69147D47FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FECF0CB16D976DCB029CD37FD41C1B4 /* Pods-DevsignNavigationTransitions-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D92D4BE9DD9F46437BCAB16F4B09A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AACA05FA0E510DF2CAD9C4018BD7545 /* Cartography-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		69A75AAB72236EFAD63B444FC80410FA /* SwiftTweaks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44706837901DF0EA1E9050B38493CD5C /* Build configuration list for PBXNativeTarget "SwiftTweaks" */;
+			buildPhases = (
+				22E0A2B78AC8B5D2C96468E2BD68E56F /* Headers */,
+				837363EAA122F91F30561C4EDDFD240E /* Sources */,
+				D0BDDC91CB4D839C48DE0522BE1FF00B /* Frameworks */,
+				9E381178D3E6F89C84785E79A9F25E47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftTweaks;
+			productName = SwiftTweaks;
+			productReference = 9439B61878BE5C1E698921F0A8E5EFC1 /* SwiftTweaks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6EE1D93DE83B4294CA7443236D3878C7 /* Pods-DevsignNavigationTransitions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A6481E15699C68A2FD206609F3B8A6 /* Build configuration list for PBXNativeTarget "Pods-DevsignNavigationTransitions" */;
+			buildPhases = (
+				AFF29E2F66635E8564B50D69147D47FF /* Headers */,
+				0B641FEC8DF7F80C27CB9BEFC9B11AD9 /* Sources */,
+				DBE0F5BF99186558B6C0D1456735CFB0 /* Frameworks */,
+				5842F6EA4A3F7FE5D91092ABF5E5C4BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7D1D1961923A29E9AB52EAB45C1CF55 /* PBXTargetDependency */,
+				CA1F36EA406898112130935C3001F7D5 /* PBXTargetDependency */,
+			);
+			name = "Pods-DevsignNavigationTransitions";
+			productName = "Pods-DevsignNavigationTransitions";
+			productReference = 926832015C810694074FC9CE768D4E15 /* Pods_DevsignNavigationTransitions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B1305A2A3108BB80AA55C80583A5071E /* Cartography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D37FEE46A453B5E549F65F1E87D5F58 /* Build configuration list for PBXNativeTarget "Cartography" */;
+			buildPhases = (
+				B9D92D4BE9DD9F46437BCAB16F4B09A5 /* Headers */,
+				240E7ADCAB20192B93D380775A763CEB /* Sources */,
+				BF9049D09BE4217F3685160B3E230B90 /* Frameworks */,
+				DD24B5907F3E682E6B759DB0B4EC40ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cartography;
+			productName = Cartography;
+			productReference = 134CA01B50065AC55850E62C54F4ADAC /* Cartography.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4313D79A1B4D45CF8995AAD98C93C306 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1305A2A3108BB80AA55C80583A5071E /* Cartography */,
+				6EE1D93DE83B4294CA7443236D3878C7 /* Pods-DevsignNavigationTransitions */,
+				69A75AAB72236EFAD63B444FC80410FA /* SwiftTweaks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5842F6EA4A3F7FE5D91092ABF5E5C4BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E381178D3E6F89C84785E79A9F25E47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1518610C5CB985F4A450FA8822F4610D /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD24B5907F3E682E6B759DB0B4EC40ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B641FEC8DF7F80C27CB9BEFC9B11AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5246FEDFF0EDA57A6EC649F58C4DB8 /* Pods-DevsignNavigationTransitions-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240E7ADCAB20192B93D380775A763CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA05AA9FE282F7DD782546BE172554EB /* Align.swift in Sources */,
+				521F4BBD97016949EE837DBA74ED0026 /* AutoresizingMaskLayoutProxy.swift in Sources */,
+				828176C2A8FE402B08BB535A38AE9F7C /* Cartography-dummy.m in Sources */,
+				E4360D8E68CDAD9D48E40AF1C49B9284 /* Coefficients.swift in Sources */,
+				EA0476907ECF715F12D6EAC530F25BB2 /* Compound.swift in Sources */,
+				25D2DBE5EBA7B9ED3DC1B5185C66498E /* Constrain.swift in Sources */,
+				DD9D802B2C29F57409366594E0C067A4 /* Constraint.swift in Sources */,
+				AF9193D885D836E70D17733D2D35185D /* ConstraintGroup.swift in Sources */,
+				87BDAA1AF8730543593F4551EA513AA9 /* Context.swift in Sources */,
+				585720EA60D264C86E24F8CD67FEDA62 /* Dimension.swift in Sources */,
+				B51533CA848EED082280551093DBE06B /* Distribute.swift in Sources */,
+				64529F0467AB876ED04808A0674C9096 /* Edge.swift in Sources */,
+				92C4AB65D0A0E8810D65044427E15D74 /* Edges.swift in Sources */,
+				15B67951681FF39D7F560650B9F7C0CF /* Expression.swift in Sources */,
+				B6C40BEB489490A804217777D376AD78 /* Extensions.swift in Sources */,
+				A7198B9901AC2F41E43AE97BBB661F77 /* LayoutGuide.swift in Sources */,
+				6629F7257A5A7AEE8E0C47F0C01B8C2C /* LayoutGuideProxy.swift in Sources */,
+				BA4CDF6377B9E4043910D50B37BAA5E1 /* LayoutItem.swift in Sources */,
+				1DCDB45A5DFFB73C90EEAA14539775BA /* LayoutProxy+TypeErasure.swift in Sources */,
+				33092C695BC7ECBD9958D66FF155855E /* LayoutProxy.swift in Sources */,
+				2CCADE3FCDE0463AD7B49D2B0E307CBE /* LayoutSupport.swift in Sources */,
+				5A4FF91EDA4E0B9D55B3821E1F430244 /* LayoutSupportProxy.swift in Sources */,
+				3810623383D9ACA3E9DB446922324695 /* Point.swift in Sources */,
+				BF24609084483494C0E6056BD62684C8 /* Priority.swift in Sources */,
+				6C2F82F89A8759D1981ABFD8036E0282 /* Property.swift in Sources */,
+				1DCB3A431C615E46083BCA0EB8EA0EB3 /* Size.swift in Sources */,
+				DEB69C9AD367316811C2B36D5C245D9B /* View.swift in Sources */,
+				CBC208DD619AF5EF0F9E070F28E4C860 /* ViewProxy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837363EAA122F91F30561C4EDDFD240E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7503E2C674FBD026A2464B2386ABDD28 /* AnyTweak.swift in Sources */,
+				1D8DB35E3F018A17D9CD2ACFB76E6B11 /* AppTheme.swift in Sources */,
+				B31BB81974DE2312EA5D6B9756E6895F /* BasicAnimationTweakTemplate.swift in Sources */,
+				9C32C8899CF61152916711BD44282084 /* CALayer+ShadowTweakTemplate.swift in Sources */,
+				87E301060F96FE9B0CF66B9D59987488 /* Clip.swift in Sources */,
+				556666ABAB2D5F37D5C88ADB45A6756F /* ColorRepresentation.swift in Sources */,
+				0DAEAB698A26ADD2C409AFCE0AB96FDE /* ComparableTweakDefaultParameters.swift in Sources */,
+				367E361D94BFCBD1E063799A0B6DF334 /* EdgeInsetsTweakTemplate.swift in Sources */,
+				F1F5A152ED6BEFB92C7760CC18574298 /* FloatingTweakGroupViewController.swift in Sources */,
+				37FCD940C824B12A5105B5278BB17914 /* HashingUtilities.swift in Sources */,
+				6AD95D3808933B95C3B7B1DDDF398B8C /* HitTransparentWindow.swift in Sources */,
+				2BBE6A820D023EEDC1612F3235BAE2BF /* MultiTweakBinding.swift in Sources */,
+				E77CD81B53349B83CF4E8A87F7F28FA9 /* MultiTweakBindingIdentifier.swift in Sources */,
+				B544DD3C2FEAEF608EAE46AB695C8D63 /* Precision.swift in Sources */,
+				CCBFAD1BB2B39E77544F858B06837DC0 /* ShadowTweakTemplate.swift in Sources */,
+				FE5F012FCBC6BE40BD1BEBBCD8E39B34 /* SpringAnimationTweakTemplate.swift in Sources */,
+				EEE72415A600600C01CC21A69FB257A7 /* StringOptionViewController.swift in Sources */,
+				57D76A0529A0564C8D2DCB41FBAF1D1F /* SwiftTweaks-dummy.m in Sources */,
+				E4D515617DD65F73AEE5094A82FD0DF2 /* Tweak.swift in Sources */,
+				7887DA089A0BACAA81B12947C4038C8E /* TweakableType.swift in Sources */,
+				D4C82E3D18AAF4D22457D0820C6062C7 /* TweakBackup.swift in Sources */,
+				ECDB12B1FC8345E19995D65BD8034D2D /* TweakBinding.swift in Sources */,
+				FD28D19BB52195D4791CE116CC825A84 /* TweakBindingIdentifier.swift in Sources */,
+				13825A9914234EED3623AEDFB422B532 /* TweakClusterType.swift in Sources */,
+				F14427ABEB5D97CB9B905E4C53456759 /* TweakCollection.swift in Sources */,
+				9D197879B3ABEAA2C1C674F68FF2D935 /* TweakCollectionViewController.swift in Sources */,
+				A5280CF3820094274E876BA20527454A /* TweakColorCell.swift in Sources */,
+				BE42CF22478011780DDDFB7FB4776797 /* TweakColorEditViewController.swift in Sources */,
+				5103B7C35BBAD6C3BD91214828691B59 /* TweakDebug.swift in Sources */,
+				766C533D4D74D52EC1E2ECE9953B64A6 /* TweakGroup.swift in Sources */,
+				19F992A2E2EF18C6F0E96A7609885416 /* TweakGroupTemplateType.swift in Sources */,
+				BFCAEAF26005F7AD0C913F3E0A4AB60C /* TweakLibrary.swift in Sources */,
+				4D1B51BBF74B992E247863689A5884E6 /* TweakPersistency.swift in Sources */,
+				32200F0F0E0B8FACE9256ABD71083CCE /* TweaksBackupsListViewController.swift in Sources */,
+				406A9AA27905AEE9F3886C8A286025BD /* TweaksCollectionsListViewController.swift in Sources */,
+				21230CA3E07B9C7EEA3EE6C37395820E /* TweaksRootViewController.swift in Sources */,
+				A8B6B0A7E7E1044E850909B362FB7A42 /* TweakStore+Sharing.swift in Sources */,
+				2B19D9713F810449BC4477C474801A9E /* TweakStore.swift in Sources */,
+				38CA0D6F46FC825D049D5B60368051CC /* TweaksViewController.swift in Sources */,
+				DEC04189BFBC3F1121D1133213E82F7B /* TweakTableCell.swift in Sources */,
+				E436F4AA20929C308AC0C742637BA9C7 /* TweakViewData.swift in Sources */,
+				112B339A033CBB81E3EDD63C2DA510C4 /* TweakWindow.swift in Sources */,
+				1A5A516D7BDBCDA3B7CF0454E8A1C5A7 /* UIColor+Tweaks.swift in Sources */,
+				AACE393C62BBC353066B48D8161BE034 /* UIEdgeInsets+EdgeInsetsTweakTemplate.swift in Sources */,
+				6802C4D8FF87BE4081004911944C9EA4 /* UIImage+SwiftTweaks.swift in Sources */,
+				4CC70BC1FA06BCE471A946C3DB510AE2 /* UIView+BasicAnimationTweakTemplate.swift in Sources */,
+				9A0BA7BFD3B05DBAAA338817E2CA04F6 /* UIView+TweakGroupTemplateSpringAnimation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7D1D1961923A29E9AB52EAB45C1CF55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cartography;
+			target = B1305A2A3108BB80AA55C80583A5071E /* Cartography */;
+			targetProxy = 40800163FB70322747B54B433E40B67D /* PBXContainerItemProxy */;
+		};
+		CA1F36EA406898112130935C3001F7D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftTweaks;
+			target = 69A75AAB72236EFAD63B444FC80410FA /* SwiftTweaks */;
+			targetProxy = 32C916DBD048DB221D3AE2DBEE885E65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		007F1066051A467FBEB0038594E9D7C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		0344AC3F26F8C973F8CBBC80E8843DB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87C2D9E1CCEE9708785D16A2C266F0C7 /* Cartography.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
+				PRODUCT_MODULE_NAME = Cartography;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		110B7AC4250E2BB8DF82549E6E6C4C0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DCEA4692D4A0ACED6D53551A5BC7F1C /* SwiftTweaks.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftTweaks/SwiftTweaks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftTweaks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftTweaks/SwiftTweaks.modulemap";
+				PRODUCT_MODULE_NAME = SwiftTweaks;
+				PRODUCT_NAME = SwiftTweaks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		413F9FBC7B4A578FFDDA76DFB0B5FD9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33926D8924C3A54D705C50D2821FDED6 /* Pods-DevsignNavigationTransitions.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DevsignNavigationTransitions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DevsignNavigationTransitions/Pods-DevsignNavigationTransitions.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		575A8C4503254F31DC7E87CE4379DF09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DCEA4692D4A0ACED6D53551A5BC7F1C /* SwiftTweaks.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftTweaks/SwiftTweaks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftTweaks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftTweaks/SwiftTweaks.modulemap";
+				PRODUCT_MODULE_NAME = SwiftTweaks;
+				PRODUCT_NAME = SwiftTweaks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C111AC3C6F6D937EACF0342FCB3B518F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87C2D9E1CCEE9708785D16A2C266F0C7 /* Cartography.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cartography/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
+				PRODUCT_MODULE_NAME = Cartography;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E0C613663D92881CA4E2C5737E0E2FD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0CF00F6EEA59785755F3747C9C49BBC /* Pods-DevsignNavigationTransitions.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DevsignNavigationTransitions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DevsignNavigationTransitions/Pods-DevsignNavigationTransitions.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E246FC26AF4A9832D7AA01080188D618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E246FC26AF4A9832D7AA01080188D618 /* Debug */,
+				007F1066051A467FBEB0038594E9D7C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42A6481E15699C68A2FD206609F3B8A6 /* Build configuration list for PBXNativeTarget "Pods-DevsignNavigationTransitions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413F9FBC7B4A578FFDDA76DFB0B5FD9F /* Debug */,
+				E0C613663D92881CA4E2C5737E0E2FD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44706837901DF0EA1E9050B38493CD5C /* Build configuration list for PBXNativeTarget "SwiftTweaks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110B7AC4250E2BB8DF82549E6E6C4C0A /* Debug */,
+				575A8C4503254F31DC7E87CE4379DF09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D37FEE46A453B5E549F65F1E87D5F58 /* Build configuration list for PBXNativeTarget "Cartography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C111AC3C6F6D937EACF0342FCB3B518F /* Debug */,
+				0344AC3F26F8C973F8CBBC80E8843DB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

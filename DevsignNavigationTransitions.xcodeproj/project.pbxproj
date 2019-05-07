@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		937031202281E44B00A930D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9370311F2281E44B00A930D8 /* AppDelegate.swift */; };
-		937031222281E44B00A930D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937031212281E44B00A930D8 /* ViewController.swift */; };
-		937031252281E44B00A930D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937031232281E44B00A930D8 /* Main.storyboard */; };
 		937031272281E44C00A930D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937031262281E44C00A930D8 /* Assets.xcassets */; };
 		9370312A2281E44C00A930D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937031282281E44C00A930D8 /* LaunchScreen.storyboard */; };
+		937031322281E48C00A930D8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937031312281E48C00A930D8 /* RootViewController.swift */; };
+		937031342281E51800A930D8 /* OnThisDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937031332281E51800A930D8 /* OnThisDayViewController.swift */; };
+		937031362281E53A00A930D8 /* PhotoGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937031352281E53A00A930D8 /* PhotoGridViewController.swift */; };
+		9370313A2281EB4100A930D8 /* ModalCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937031392281EB4100A930D8 /* ModalCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9370311C2281E44B00A930D8 /* DevsignNavigationTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevsignNavigationTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9370311F2281E44B00A930D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		937031212281E44B00A930D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		937031242281E44B00A930D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		937031262281E44C00A930D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		937031292281E44C00A930D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9370312B2281E44C00A930D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		937031312281E48C00A930D8 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		937031332281E51800A930D8 /* OnThisDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnThisDayViewController.swift; sourceTree = "<group>"; };
+		937031352281E53A00A930D8 /* PhotoGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridViewController.swift; sourceTree = "<group>"; };
+		937031392281EB4100A930D8 /* ModalCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,31 @@
 			isa = PBXGroup;
 			children = (
 				9370311F2281E44B00A930D8 /* AppDelegate.swift */,
-				937031212281E44B00A930D8 /* ViewController.swift */,
-				937031232281E44B00A930D8 /* Main.storyboard */,
+				937031312281E48C00A930D8 /* RootViewController.swift */,
+				937031372281E90600A930D8 /* Complex Transition */,
+				937031382281E91100A930D8 /* Simple Transition */,
 				937031262281E44C00A930D8 /* Assets.xcassets */,
 				937031282281E44C00A930D8 /* LaunchScreen.storyboard */,
 				9370312B2281E44C00A930D8 /* Info.plist */,
 			);
 			path = DevsignNavigationTransitions;
+			sourceTree = "<group>";
+		};
+		937031372281E90600A930D8 /* Complex Transition */ = {
+			isa = PBXGroup;
+			children = (
+				937031352281E53A00A930D8 /* PhotoGridViewController.swift */,
+			);
+			path = "Complex Transition";
+			sourceTree = "<group>";
+		};
+		937031382281E91100A930D8 /* Simple Transition */ = {
+			isa = PBXGroup;
+			children = (
+				937031332281E51800A930D8 /* OnThisDayViewController.swift */,
+				937031392281EB4100A930D8 /* ModalCardViewController.swift */,
+			);
+			path = "Simple Transition";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +146,6 @@
 			files = (
 				9370312A2281E44C00A930D8 /* LaunchScreen.storyboard in Resources */,
 				937031272281E44C00A930D8 /* Assets.xcassets in Resources */,
-				937031252281E44B00A930D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +156,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				937031222281E44B00A930D8 /* ViewController.swift in Sources */,
+				937031362281E53A00A930D8 /* PhotoGridViewController.swift in Sources */,
+				9370313A2281EB4100A930D8 /* ModalCardViewController.swift in Sources */,
 				937031202281E44B00A930D8 /* AppDelegate.swift in Sources */,
+				937031342281E51800A930D8 /* OnThisDayViewController.swift in Sources */,
+				937031322281E48C00A930D8 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		937031232281E44B00A930D8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				937031242281E44B00A930D8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		937031282281E44C00A930D8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -12,7 +12,8 @@ class OnThisDayViewController: UIViewController {
 
 	init() {
 		super.init(nibName: nil, bundle: nil)
-		self.title = "On This Day"
+		self.title = "Simple"
+		self.tabBarItem.image = UIImage(named: "Simple")
 	}
 
 	required init?(coder aDecoder: NSCoder) {
@@ -24,10 +25,10 @@ class OnThisDayViewController: UIViewController {
 
 		self.view.backgroundColor = .white
 
-		self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Change Date", style: .plain, target: self, action: #selector(changeDatePressed))
+		self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Present Modal", style: .plain, target: self, action: #selector(presentModal))
     }
 
-	@objc private func changeDatePressed() {
+	@objc private func presentModal() {
 		let modalCard = ModalCardViewController()
 		self.present(modalCard, animated: true, completion: nil)
 	}

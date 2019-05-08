@@ -12,6 +12,7 @@ import Cartography
 // When animating in/out of ModalCardViewController,
 // we need to know what type of transition is going on,
 // so we can animate properly.
+// Think of this as a modal version of UINavigationController.Operation
 fileprivate enum ModalTransitionType {
 	case presentation, dismissal
 }
@@ -78,65 +79,84 @@ class ModalCardViewController: UIViewController {
 
 extension ModalCardViewController: UIViewControllerTransitioningDelegate {
 	public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-		if presented == self {
-			self.currentModalTransitionType = .presentation
-			return self
-		} else {
-			return nil
-		}
+		let result = (presented == self) ? self : nil
+		result?.currentModalTransitionType = .presentation
+		return result
 	}
 
 	public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-		if dismissed == self {
-			self.currentModalTransitionType = .dismissal
-			return self
-		} else {
-			return nil
-		}
+		let result = (dismissed == self) ? self : nil
+		result?.currentModalTransitionType = .dismissal
+		return result
 	}
 }
 
 extension ModalCardViewController: UIViewControllerAnimatedTransitioning {
 	private var transitionDuration: TimeInterval {
-		return 0.4
+		guard let transitionType = self.currentModalTransitionType else { fatalError() }
+		switch transitionType {
+		case .presentation:
+			return 0.44
+		case .dismissal:
+			return 0.32
+		}
 	}
 
-	public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+	public func transitionDuration(
+		using transitionContext: UIViewControllerContextTransitioning?
+	) -> TimeInterval {
 		return transitionDuration
 	}
 
 	public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
 		guard let transitionType = self.currentModalTransitionType else { fatalError() }
-		self.currentModalTransitionType = nil
 
+		// Here's the state we'd be in when the card is offscreen
 		let offscreenSituation = {
 			let offscreenY = self.view.bounds.height - self.cardView.frame.minY + 20
 			self.cardView.transform = CGAffineTransform.identity.translatedBy(x: 0, y: offscreenY)
 			self.view.backgroundColor = .clear
 		}
 
+		// ...and here's the state of things when the card is onscreen.
 		let presentedSituation = {
 			self.cardView.transform = CGAffineTransform.identity
 			self.view.backgroundColor = ModalCardViewController.overlayBackgroundColor
 		}
 
-		let damping: CGFloat = 0.9
-		let animator = UIViewPropertyAnimator(duration: transitionDuration, dampingRatio: damping)
+		// We want different animation timing, based on whether we're presenting or dismissing.
+		let animator: UIViewPropertyAnimator
+		switch transitionType {
+		case .presentation:
+			animator = UIViewPropertyAnimator(duration: transitionDuration, dampingRatio: 0.82)
+		case .dismissal:
+			animator = UIViewPropertyAnimator(duration: transitionDuration, curve: UIView.AnimationCurve.easeIn)
+		}
 
 		switch transitionType {
 		case .presentation:
+			// We need to add the modal to the view hierarchy,
+			// and perform the animation.
 			let toView = transitionContext.view(forKey: .to)!
 			UIView.performWithoutAnimation(offscreenSituation)
 			transitionContext.containerView.addSubview(toView)
 			animator.addAnimations(presentedSituation)
 		case .dismissal:
+			// The modal is already in the view hierarchy,
+			// so we just perform the animation.
 			animator.addAnimations(offscreenSituation)
 		}
+
+		// When the animation finishes,
+		// we tell the system that the animation has completed,
+		// and clear out our transition type.
 		animator.addCompletion { (position) in
 			assert(position == .end)
 			transitionContext.completeTransition(true)
+			self.currentModalTransitionType = nil
 		}
 
+		// ... and here's where we kick off the animation:
 		animator.startAnimation()
 	}
 }

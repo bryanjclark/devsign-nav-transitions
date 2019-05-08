@@ -67,6 +67,7 @@
 			children = (
 				9370311F2281E44B00A930D8 /* AppDelegate.swift */,
 				937031312281E48C00A930D8 /* RootViewController.swift */,
+				937031352281E53A00A930D8 /* PhotoGridViewController.swift */,
 				937031372281E90600A930D8 /* Complex Transition */,
 				937031382281E91100A930D8 /* Simple Transition */,
 				937031262281E44C00A930D8 /* Assets.xcassets */,
@@ -79,7 +80,6 @@
 		937031372281E90600A930D8 /* Complex Transition */ = {
 			isa = PBXGroup;
 			children = (
-				937031352281E53A00A930D8 /* PhotoGridViewController.swift */,
 			);
 			path = "Complex Transition";
 			sourceTree = "<group>";

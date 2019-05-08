@@ -10,8 +10,6 @@ import UIKit
 
 class RootViewController: UIViewController {
 	private let tabController = UITabBarController()
-	private let firstTab = PhotoGridViewController()
-	private let secondTab = OnThisDayViewController()
 
 	init() {
 		super.init(nibName: nil, bundle: nil)
@@ -31,10 +29,10 @@ class RootViewController: UIViewController {
 		self.tabController.view.frame = self.view.bounds
 		self.tabController.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
 
-		let firstNavC = UINavigationController(rootViewController: firstTab)
-		self.tabController.addChild(firstNavC)
+		let firstNavController = UINavigationController(rootViewController: OnThisDayViewController())
+		self.tabController.addChild(firstNavController)
 
-		let secondNavC = UINavigationController(rootViewController: secondTab)
-		self.tabController.addChild(secondNavC)
+		let secondNavController = UINavigationController(rootViewController: PhotoGridViewController())
+		self.tabController.addChild(secondNavController)
     }
 }

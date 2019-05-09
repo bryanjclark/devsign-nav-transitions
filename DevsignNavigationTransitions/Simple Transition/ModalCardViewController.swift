@@ -112,14 +112,14 @@ extension ModalCardViewController: UIViewControllerAnimatedTransitioning {
 		guard let transitionType = self.currentModalTransitionType else { fatalError() }
 
 		// Here's the state we'd be in when the card is offscreen
-		let offscreenSituation = {
+		let cardOffscreenState = {
 			let offscreenY = self.view.bounds.height - self.cardView.frame.minY + 20
 			self.cardView.transform = CGAffineTransform.identity.translatedBy(x: 0, y: offscreenY)
 			self.view.backgroundColor = .clear
 		}
 
 		// ...and here's the state of things when the card is onscreen.
-		let presentedSituation = {
+		let presentedState = {
 			self.cardView.transform = CGAffineTransform.identity
 			self.view.backgroundColor = ModalCardViewController.overlayBackgroundColor
 		}
@@ -138,13 +138,13 @@ extension ModalCardViewController: UIViewControllerAnimatedTransitioning {
 			// We need to add the modal to the view hierarchy,
 			// and perform the animation.
 			let toView = transitionContext.view(forKey: .to)!
-			UIView.performWithoutAnimation(offscreenSituation)
+			UIView.performWithoutAnimation(cardOffscreenState)
 			transitionContext.containerView.addSubview(toView)
-			animator.addAnimations(presentedSituation)
+			animator.addAnimations(presentedState)
 		case .dismissal:
 			// The modal is already in the view hierarchy,
 			// so we just perform the animation.
-			animator.addAnimations(offscreenSituation)
+			animator.addAnimations(cardOffscreenState)
 		}
 
 		// When the animation finishes,

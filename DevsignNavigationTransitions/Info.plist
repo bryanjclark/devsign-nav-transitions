@@ -24,6 +24,8 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Displays the images from your Photos library in the Complex transition tab</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		444A2B2959E86DC09FFD4E76 /* Pods_DevsignNavigationTransitions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0388E4988AC4A745C27AD9C9 /* Pods_DevsignNavigationTransitions.framework */; };
+		9312A4DF229367A600F7E9B9 /* LocketNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312A4DE229367A600F7E9B9 /* LocketNavigationController.swift */; };
+		9312A4E1229367FF00F7E9B9 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312A4E0229367FF00F7E9B9 /* PhotoDetailViewController.swift */; };
+		9312A4E32293682F00F7E9B9 /* PhotoDetailTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312A4E22293682F00F7E9B9 /* PhotoDetailTransition.swift */; };
+		9312A4E52293687400F7E9B9 /* LocketTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312A4E42293687400F7E9B9 /* LocketTabBarController.swift */; };
+		932EA9D72295DA68006BF679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932EA9D62295DA68006BF679 /* Assets.xcassets */; };
+		93544E3E22948EAA00DA8B0A /* PhotoGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93544E3D22948EAA00DA8B0A /* PhotoGridCell.swift */; };
+		93544E402294A83300DA8B0A /* CG Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93544E3F2294A83300DA8B0A /* CG Helpers.swift */; };
 		937031202281E44B00A930D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9370311F2281E44B00A930D8 /* AppDelegate.swift */; };
-		937031272281E44C00A930D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937031262281E44C00A930D8 /* Assets.xcassets */; };
 		9370312A2281E44C00A930D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937031282281E44C00A930D8 /* LaunchScreen.storyboard */; };
 		937031322281E48C00A930D8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937031312281E48C00A930D8 /* RootViewController.swift */; };
 		937031342281E51800A930D8 /* OnThisDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937031332281E51800A930D8 /* OnThisDayViewController.swift */; };
@@ -21,9 +27,15 @@
 		0388E4988AC4A745C27AD9C9 /* Pods_DevsignNavigationTransitions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevsignNavigationTransitions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F567695FE130465F372EAC /* Pods-DevsignNavigationTransitions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevsignNavigationTransitions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevsignNavigationTransitions/Pods-DevsignNavigationTransitions.debug.xcconfig"; sourceTree = "<group>"; };
 		7A711B2D966A519EAFF39B13 /* Pods-DevsignNavigationTransitions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevsignNavigationTransitions.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevsignNavigationTransitions/Pods-DevsignNavigationTransitions.release.xcconfig"; sourceTree = "<group>"; };
+		9312A4DE229367A600F7E9B9 /* LocketNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocketNavigationController.swift; sourceTree = "<group>"; };
+		9312A4E0229367FF00F7E9B9 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		9312A4E22293682F00F7E9B9 /* PhotoDetailTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailTransition.swift; sourceTree = "<group>"; };
+		9312A4E42293687400F7E9B9 /* LocketTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocketTabBarController.swift; sourceTree = "<group>"; };
+		932EA9D62295DA68006BF679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93544E3D22948EAA00DA8B0A /* PhotoGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridCell.swift; sourceTree = "<group>"; };
+		93544E3F2294A83300DA8B0A /* CG Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG Helpers.swift"; sourceTree = "<group>"; };
 		9370311C2281E44B00A930D8 /* DevsignNavigationTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevsignNavigationTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9370311F2281E44B00A930D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		937031262281E44C00A930D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		937031292281E44C00A930D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9370312B2281E44C00A930D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		937031312281E48C00A930D8 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -67,12 +79,11 @@
 			children = (
 				9370311F2281E44B00A930D8 /* AppDelegate.swift */,
 				937031312281E48C00A930D8 /* RootViewController.swift */,
-				937031352281E53A00A930D8 /* PhotoGridViewController.swift */,
 				937031372281E90600A930D8 /* Complex Transition */,
 				937031382281E91100A930D8 /* Simple Transition */,
-				937031262281E44C00A930D8 /* Assets.xcassets */,
 				937031282281E44C00A930D8 /* LaunchScreen.storyboard */,
 				9370312B2281E44C00A930D8 /* Info.plist */,
+				932EA9D62295DA68006BF679 /* Assets.xcassets */,
 			);
 			path = DevsignNavigationTransitions;
 			sourceTree = "<group>";
@@ -80,6 +91,13 @@
 		937031372281E90600A930D8 /* Complex Transition */ = {
 			isa = PBXGroup;
 			children = (
+				937031352281E53A00A930D8 /* PhotoGridViewController.swift */,
+				9312A4E0229367FF00F7E9B9 /* PhotoDetailViewController.swift */,
+				9312A4DE229367A600F7E9B9 /* LocketNavigationController.swift */,
+				9312A4E22293682F00F7E9B9 /* PhotoDetailTransition.swift */,
+				9312A4E42293687400F7E9B9 /* LocketTabBarController.swift */,
+				93544E3D22948EAA00DA8B0A /* PhotoGridCell.swift */,
+				93544E3F2294A83300DA8B0A /* CG Helpers.swift */,
 			);
 			path = "Complex Transition";
 			sourceTree = "<group>";
@@ -170,8 +188,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932EA9D72295DA68006BF679 /* Assets.xcassets in Resources */,
 				9370312A2281E44C00A930D8 /* LaunchScreen.storyboard in Resources */,
-				937031272281E44C00A930D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,8 +251,14 @@
 			files = (
 				937031362281E53A00A930D8 /* PhotoGridViewController.swift in Sources */,
 				9370313A2281EB4100A930D8 /* ModalCardViewController.swift in Sources */,
+				9312A4E32293682F00F7E9B9 /* PhotoDetailTransition.swift in Sources */,
 				937031202281E44B00A930D8 /* AppDelegate.swift in Sources */,
+				93544E3E22948EAA00DA8B0A /* PhotoGridCell.swift in Sources */,
+				9312A4E1229367FF00F7E9B9 /* PhotoDetailViewController.swift in Sources */,
+				9312A4E52293687400F7E9B9 /* LocketTabBarController.swift in Sources */,
+				93544E402294A83300DA8B0A /* CG Helpers.swift in Sources */,
 				937031342281E51800A930D8 /* OnThisDayViewController.swift in Sources */,
+				9312A4DF229367A600F7E9B9 /* LocketNavigationController.swift in Sources */,
 				937031322281E48C00A930D8 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

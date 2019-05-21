@@ -9,7 +9,7 @@
 import UIKit
 
 class RootViewController: UIViewController {
-	private let tabController = UITabBarController()
+	private let tabController = LocketTabBarController()
 
 	init() {
 		super.init(nibName: nil, bundle: nil)
@@ -32,7 +32,14 @@ class RootViewController: UIViewController {
 		let firstNavController = UINavigationController(rootViewController: OnThisDayViewController())
 		self.tabController.addChild(firstNavController)
 
-		let secondNavController = UINavigationController(rootViewController: PhotoGridViewController())
+		let secondNavController = LocketNavigationController(rootViewController: PhotoGridViewController())
 		self.tabController.addChild(secondNavController)
     }
+
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+
+		// STOPSHIP Remove this!
+		self.tabController.selectedIndex = 1
+	}
 }

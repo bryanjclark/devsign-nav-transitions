@@ -35,11 +35,4 @@ class RootViewController: UIViewController {
 		let secondNavController = LocketNavigationController(rootViewController: PhotoGridViewController())
 		self.tabController.addChild(secondNavController)
     }
-
-	override func viewDidAppear(_ animated: Bool) {
-		super.viewDidAppear(animated)
-
-		// STOPSHIP Remove this!
-		self.tabController.selectedIndex = 1
-	}
 }

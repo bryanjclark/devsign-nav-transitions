@@ -71,7 +71,7 @@ public class PhotoDetailPushTransition: NSObject, UIViewControllerAnimatedTransi
 			.forEach {
 				containerView.addSubview($0)
 		}
-		let transitionImage = fromDelegate.referenceImage()! // STOPSHIP try and fetch the higher-res size, right?
+		let transitionImage = fromDelegate.referenceImage()!
 		transitionImageView.image = transitionImage
 		transitionImageView.frame = fromDelegate.imageFrame()
 			?? PhotoDetailPushTransition.defaultOffscreenFrameForPresentation(image: transitionImage, forView: toView!)

@@ -11,6 +11,7 @@ import Cartography
 import Photos
 
 class PhotoDetailViewController: UIViewController {
+	private let asset: PHAsset
 	private let imageView = UIImageView()
 	private let imageManager = PHCachingImageManager()
 
@@ -51,9 +52,39 @@ class PhotoDetailViewController: UIViewController {
 		constrain(self.imageView) {
 			$0.edges == $0.superview!.edges
 		}
+
+		self.configureDismissGesture()
     }
 
-	private let asset: PHAsset
+
+	// MARK: Drag-to-dismiss
+
+	private let dismissPanGesture = UIPanGestureRecognizer()
+	public var isInteractivelyDismissing: Bool = false
+	public weak var transitionController: PhotoDetailInteractiveDismissTransition? = nil
+
+	private func configureDismissGesture() {
+		self.view.addGestureRecognizer(self.dismissPanGesture)
+		self.dismissPanGesture.addTarget(self, action: #selector(dismissPanGestureDidChange(_:)))
+	}
+
+	@objc private func dismissPanGestureDidChange(_ gesture: UIPanGestureRecognizer) {
+		// Decide whether we're interactively-dismissing, and notify our navigation controller.
+		switch gesture.state {
+		case .began:
+			self.isInteractivelyDismissing = true
+			self.navigationController?.popViewController(animated: true)
+		case .cancelled, .failed, .ended:
+			self.isInteractivelyDismissing = false
+		case .changed, .possible:
+			break
+		@unknown default:
+			break
+		}
+
+		// We want to update our transition controller, too!
+		self.transitionController?.didPanWith(gestureRecognizer: gesture)
+	}
 }
 
 extension PhotoDetailViewController: PhotoDetailTransitionAnimatorDelegate {

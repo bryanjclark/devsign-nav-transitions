@@ -52,7 +52,11 @@ extension LocketNavigationController: UINavigationControllerDelegate {
 			let photoDetailVC = fromVC as? PhotoDetailViewController,
 			operation == .pop
 		{
-			result = PhotoDetailPopTransition(toDelegate: toVC, fromPhotoDetailVC: photoDetailVC)
+			if photoDetailVC.isInteractivelyDismissing {
+				result = PhotoDetailInteractiveDismissTransition(fromDelegate: photoDetailVC, toDelegate: toVC)
+			} else {
+				result = PhotoDetailPopTransition(toDelegate: toVC, fromPhotoDetailVC: photoDetailVC)
+			}
 		} else {
 			result = nil
 		}
@@ -63,7 +67,7 @@ extension LocketNavigationController: UINavigationControllerDelegate {
 	public func navigationController(
 		_ navigationController: UINavigationController,
 		interactionControllerFor animationController: UIViewControllerAnimatedTransitioning
-		) -> UIViewControllerInteractiveTransitioning? {
+	) -> UIViewControllerInteractiveTransitioning? {
 		return self.currentAnimationTransition as? UIViewControllerInteractiveTransitioning
 	}
 

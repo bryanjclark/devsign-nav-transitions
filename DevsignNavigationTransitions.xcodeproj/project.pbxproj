@@ -13,6 +13,7 @@
 		9312A4E32293682F00F7E9B9 /* PhotoDetailTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312A4E22293682F00F7E9B9 /* PhotoDetailTransition.swift */; };
 		9312A4E52293687400F7E9B9 /* LocketTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9312A4E42293687400F7E9B9 /* LocketTabBarController.swift */; };
 		932EA9D72295DA68006BF679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932EA9D62295DA68006BF679 /* Assets.xcassets */; };
+		932EA9DA22970C9E006BF679 /* PhotoDetailInteractiveDismissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932EA9D922970C9E006BF679 /* PhotoDetailInteractiveDismissTransition.swift */; };
 		93544E3E22948EAA00DA8B0A /* PhotoGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93544E3D22948EAA00DA8B0A /* PhotoGridCell.swift */; };
 		93544E402294A83300DA8B0A /* CG Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93544E3F2294A83300DA8B0A /* CG Helpers.swift */; };
 		937031202281E44B00A930D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9370311F2281E44B00A930D8 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 		9312A4E22293682F00F7E9B9 /* PhotoDetailTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailTransition.swift; sourceTree = "<group>"; };
 		9312A4E42293687400F7E9B9 /* LocketTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocketTabBarController.swift; sourceTree = "<group>"; };
 		932EA9D62295DA68006BF679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		932EA9D922970C9E006BF679 /* PhotoDetailInteractiveDismissTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailInteractiveDismissTransition.swift; sourceTree = "<group>"; };
 		93544E3D22948EAA00DA8B0A /* PhotoGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridCell.swift; sourceTree = "<group>"; };
 		93544E3F2294A83300DA8B0A /* CG Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CG Helpers.swift"; sourceTree = "<group>"; };
 		9370311C2281E44B00A930D8 /* DevsignNavigationTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevsignNavigationTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		932EA9D822970C85006BF679 /* Interactive Transition */ = {
+			isa = PBXGroup;
+			children = (
+				932EA9D922970C9E006BF679 /* PhotoDetailInteractiveDismissTransition.swift */,
+			);
+			path = "Interactive Transition";
+			sourceTree = "<group>";
+		};
 		937031132281E44B00A930D8 = {
 			isa = PBXGroup;
 			children = (
@@ -79,8 +89,9 @@
 			children = (
 				9370311F2281E44B00A930D8 /* AppDelegate.swift */,
 				937031312281E48C00A930D8 /* RootViewController.swift */,
-				937031372281E90600A930D8 /* Complex Transition */,
 				937031382281E91100A930D8 /* Simple Transition */,
+				937031372281E90600A930D8 /* Complex Transition */,
+				932EA9D822970C85006BF679 /* Interactive Transition */,
 				937031282281E44C00A930D8 /* LaunchScreen.storyboard */,
 				9370312B2281E44C00A930D8 /* Info.plist */,
 				932EA9D62295DA68006BF679 /* Assets.xcassets */,
@@ -251,6 +262,7 @@
 			files = (
 				937031362281E53A00A930D8 /* PhotoGridViewController.swift in Sources */,
 				9370313A2281EB4100A930D8 /* ModalCardViewController.swift in Sources */,
+				932EA9DA22970C9E006BF679 /* PhotoDetailInteractiveDismissTransition.swift in Sources */,
 				9312A4E32293682F00F7E9B9 /* PhotoDetailTransition.swift in Sources */,
 				937031202281E44B00A930D8 /* AppDelegate.swift in Sources */,
 				93544E3E22948EAA00DA8B0A /* PhotoGridCell.swift in Sources */,

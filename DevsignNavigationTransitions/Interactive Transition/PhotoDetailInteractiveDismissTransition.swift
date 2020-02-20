@@ -88,6 +88,12 @@ public class PhotoDetailInteractiveDismissTransition: NSObject {
 		let transitionContext = self.transitionContext!
 		let backgroundAnimation = self.backgroundAnimation!
 
+        if didCancel {
+            transitionContext.cancelInteractiveTransition()
+        } else {
+            transitionContext.finishInteractiveTransition()
+        }
+
 		// The cancel and complete animations have different timing values.
 		// I dialed these in on-device using SwiftTweaks.
 		let completionDuration: Double
@@ -125,11 +131,6 @@ public class PhotoDetailInteractiveDismissTransition: NSObject {
 			self?.toDelegate?.transitionDidEnd()
 			self?.fromDelegate.transitionDidEnd()
 
-			if didCancel {
-				transitionContext.cancelInteractiveTransition()
-			} else {
-				transitionContext.finishInteractiveTransition()
-			}
 			transitionContext.completeTransition(!didCancel)
 			self?.transitionContext = nil
 		}
